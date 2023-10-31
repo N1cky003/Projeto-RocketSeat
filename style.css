@@ -26,18 +26,19 @@
 
 body {
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100%;
 }
 
 body * {
-  font-family: 'Pixelify Sans', sans-serif;
+  font-family: "Pixelify Sans", sans-serif;
   color: var(--fundo);
 }
 
 #container {
- width: 360px;
- max-width: 588px;
- margin: auto;
- padding: 0 24px;
+  width: 360px;
+  max-width: 588px;
+  margin: auto;
+  padding: 0 24px;
 }
 
 #foto {
@@ -69,7 +70,7 @@ body * {
   background: white var(--switch) center;
   border: 0;
   border-radius: 50%;
-  
+
   position: absolute;
   top: 50%;
   left: 0;
@@ -79,7 +80,6 @@ body * {
 .light #switch button {
   right: 0;
   left: initial;
-
 }
 
 #switch span {
@@ -99,24 +99,23 @@ ul {
   padding: 24px;
 }
 
-ul li a{
+ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
   padding: 16px 24px;
   background-color: var(--bg-link);
   border: 1px solid var(--borda);
   border-radius: 8px;
-  text-decoration: none; 
+  text-decoration: none;
 
   transition: background 0.2s;
-
 }
 
 ul li a:hover {
   background-color: var(--bg-hover);
-  border: 1.5px solid var(--fundo); 
+  border: 1.5px solid var(--fundo);
 }
 
 #social {
@@ -124,9 +123,7 @@ ul li a:hover {
   justify-content: center;
 
   padding: 24px 0px;
-  font-size: 24px; 
-
- 
+  font-size: 24px;
 }
 
 #social a {
@@ -134,9 +131,9 @@ ul li a:hover {
   align-items: center;
   justify-content: center;
   padding: 16px;
-  border-radius: 50%; 
-  transition: background .2s; 
-}  
+  border-radius: 50%;
+  transition: background 0.2s;
+}
 
 #social a:hover {
   background: var(--social-hover);
@@ -145,4 +142,14 @@ ul li a:hover {
 footer {
   padding: 24px 0;
   text-align: center;
+}
+
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }
+
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
 }
