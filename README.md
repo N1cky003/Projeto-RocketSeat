@@ -1,2 +1,2 @@
 # Projeto-RocketSeat
-<h1> Projeto feito pelo curso gratuido da RocketSeat, discover.</h1>
+<h1> Projeto feito pelo curso da RocketSeat.</h1>
